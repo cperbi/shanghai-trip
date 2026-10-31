@@ -9,6 +9,8 @@ const routePlaces = {
   sihang:    { name: '四行倉庫',          lat: 31.2421773, lon: 121.4664853, query: '四行仓库抗战纪念馆' },
   peoples:   { name: '人民廣場',          lat: 31.2338888, lon: 121.4709881, query: '上海人民广场' },
   nanjing:   { name: '南京東路',          lat: 31.2367348, lon: 121.4717101, query: '南京东路步行街', approximate: true },
+  wangyutai: { name: '汪裕泰・茶葉',      lat: 31.23745,   lon: 121.47520,   query: '汪裕泰 第一食品商店 南京东路720号', approximate: true },
+  sanyang:   { name: '三陽南貨・果乾',    lat: 31.23760,   lon: 121.47680,   query: '三阳南货店 南京东路630号', approximate: true },
   yuxingji:  { name: '裕興記',            lat: 31.24010,   lon: 121.48585,   query: '裕兴记 四川中路410号', approximate: true },
   waibaidu:  { name: '外白渡橋',          lat: 31.2453073, lon: 121.4857442, query: '外白渡桥' },
   bund:      { name: '外灘步道',          lat: 31.23950,   lon: 121.49000,   query: '外滩 南京东路口', approximate: true },
@@ -16,7 +18,7 @@ const routePlaces = {
   yuyuan:    { name: '豫園庭園',          lat: 31.2289274, lon: 121.4879752, query: '上海豫园' },
   citygod:   { name: '城隍廟・商城',      lat: 31.2278786, lon: 121.4881914, query: '上海城隍庙' },
   nanxiang:  { name: '南翔饅頭店',        lat: 31.22760,   lon: 121.48770,   query: '南翔馒头店 豫园路87号', approximate: true },
-  xintiandi: { name: '新天地',            lat: 31.2219311, lon: 121.4704371, query: '上海新天地' },
+  huxinting: { name: '湖心亭・九曲橋',    lat: 31.22776,   lon: 121.48770,   query: '湖心亭 九曲桥 豫园', approximate: true },
   pearl:     { name: '東方明珠外觀',      lat: 31.2419464, lon: 121.4952604, query: '东方明珠广播电视塔' },
   superbrand:{ name: '正大廣場',          lat: 31.2386497, lon: 121.4947385, query: '正大广场 陆家嘴西路168号' },
   riverside: { name: '浦東濱江',          lat: 31.2419543, lon: 121.4920105, query: '陆家嘴 滨江大道', approximate: true },
@@ -30,9 +32,9 @@ const routePlaces = {
 
 const dailyRoutes = {
   '1': { stops: ['airport', 'hotel'], transit: [0], note: '機場到飯店需搭車；海底撈分店未定，暫不標點。' },
-  '2': { stops: ['dahu', 'sihang', 'peoples', 'nanjing', 'yuxingji', 'hotel', 'waibaidu', 'bund', 'laolao'], transit: [0], note: '大壺春到四行倉庫建議搭車；其餘依順序步行。' },
-  '3': { stops: ['yuyuan', 'citygod', 'nanxiang', 'xintiandi', 'pearl', 'superbrand', 'riverside'], transit: [3], note: '新天地到陸家嘴建議搭車過江；東方明珠只拍外觀。' },
-  '4': { stops: ['hotel', 'jingan', 'lailai', 'anfu', 'wukang', 'mansion', 'shangyin'], transit: [0], note: '飯店到靜安寺建議搭車；後半段以步行逛街為主。' },
+  '2': { stops: ['hotel', 'jingan', 'lailai', 'anfu', 'wukang', 'mansion', 'shangyin'], transit: [0], note: '4/1（週四）飯店到靜安寺建議搭車；步行逛安福路、武康路和淮海路，晚上到上隱水產。' },
+  '3': { stops: ['dahu', 'sihang', 'peoples', 'nanjing', 'wangyutai', 'sanyang', 'yuxingji', 'hotel', 'waibaidu', 'bund', 'laolao'], transit: [0], note: '4/2（週五）大壺春到四行倉庫建議搭車；沿南京路往外灘走，茶葉與果乾順路買。' },
+  '4': { stops: ['yuyuan', 'citygod', 'nanxiang', 'huxinting', 'pearl', 'superbrand', 'riverside'], transit: [3], note: '4/3（週六）上午豫園老城廂；從豫園商城到陸家嘴搭車過江，東方明珠只拍外觀。' },
   '5': { stops: [], transit: [], note: '最後一天留白，等回程航班確認再畫路線。' },
 };
 
