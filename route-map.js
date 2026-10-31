@@ -33,8 +33,8 @@ const routePlaces = {
 const dailyRoutes = {
   '1': { stops: ['airport', 'hotel'], transit: [0], note: '機場到飯店需搭車；海底撈分店未定，暫不標點。' },
   '2': { stops: ['hotel', 'jingan', 'lailai', 'anfu', 'wukang', 'mansion', 'shangyin'], transit: [0], note: '4/1（週四）飯店到靜安寺建議搭車；步行逛安福路、武康路和淮海路，晚上到上隱水產。' },
-  '3': { stops: ['dahu', 'sihang', 'peoples', 'nanjing', 'wangyutai', 'sanyang', 'yuxingji', 'hotel', 'waibaidu', 'bund', 'laolao'], transit: [0], note: '4/2（週五）大壺春到四行倉庫建議搭車；沿南京路往外灘走，茶葉與果乾順路買。' },
-  '4': { stops: ['yuyuan', 'citygod', 'nanxiang', 'huxinting', 'pearl', 'superbrand', 'riverside'], transit: [3], note: '4/3（週六）上午豫園老城廂；從豫園商城到陸家嘴搭車過江，東方明珠只拍外觀。' },
+  '3': { stops: ['dahu', 'sihang', 'peoples', 'nanjing', 'wangyutai', 'sanyang', 'yuxingji', 'hotel', 'laolao'], transit: [0], note: '4/2（週五）四行倉庫、人民廣場和南京東路集中一天；茶葉與果乾沿路買，晚餐在飯店附近。' },
+  '4': { stops: ['yuyuan', 'citygod', 'nanxiang', 'huxinting', 'bund', 'pearl', 'superbrand', 'riverside'], transit: [4], note: '4/3（週六）豫園步行到外灘，再搭車過江到陸家嘴；外白渡橋是外灘北端的加走選項。' },
   '5': { stops: [], transit: [], note: '最後一天留白，等回程航班確認再畫路線。' },
 };
 
