@@ -10,7 +10,7 @@ const routePlaces = {
   peoples:   { name: '人民廣場',          lat: 31.2338888, lon: 121.4709881, query: '上海人民广场' },
   nanjing:   { name: '南京東路',          lat: 31.2367348, lon: 121.4717101, query: '南京东路步行街', approximate: true },
   wangyutai: { name: '汪裕泰・茶葉',      lat: 31.23745,   lon: 121.47520,   query: '汪裕泰 第一食品商店 南京东路720号', approximate: true },
-  sanyang:   { name: '三陽南貨・果乾',    lat: 31.23760,   lon: 121.47680,   query: '三阳南货店 南京东路630号', approximate: true },
+  huanglongtai: { name: '黃隆泰・果乾茶', lat: 31.23910, lon: 121.48440, query: '黄隆泰潮品花茶店 江西中路300号', approximate: true },
   yuxingji:  { name: '裕興記',            lat: 31.24010,   lon: 121.48585,   query: '裕兴记 四川中路410号', approximate: true },
   waibaidu:  { name: '外白渡橋',          lat: 31.2453073, lon: 121.4857442, query: '外白渡桥' },
   bund:      { name: '外灘步道',          lat: 31.23950,   lon: 121.49000,   query: '外滩 南京东路口', approximate: true },
@@ -33,7 +33,7 @@ const routePlaces = {
 const dailyRoutes = {
   '1': { stops: ['airport', 'hotel'], transit: [0], note: '機場到飯店需搭車；海底撈分店未定，暫不標點。' },
   '2': { stops: ['hotel', 'jingan', 'lailai', 'anfu', 'wukang', 'mansion', 'shangyin'], transit: [0], note: '4/1（週四）飯店到靜安寺建議搭車；步行逛安福路、武康路和淮海路，晚上到上隱水產。' },
-  '3': { stops: ['dahu', 'sihang', 'peoples', 'nanjing', 'wangyutai', 'sanyang', 'yuxingji', 'hotel', 'laolao'], transit: [0], note: '4/2（週五）四行倉庫、人民廣場和南京東路集中一天；茶葉與果乾沿路買，晚餐在飯店附近。' },
+  '3': { stops: ['dahu', 'sihang', 'peoples', 'nanjing', 'wangyutai', 'huanglongtai', 'yuxingji', 'hotel', 'laolao'], transit: [0], note: '4/2（週五）四行倉庫、人民廣場和南京東路集中一天；茶葉與果乾茶沿路買，晚餐在飯店附近。' },
   '4': { stops: ['yuyuan', 'citygod', 'nanxiang', 'huxinting', 'bund', 'pearl', 'superbrand', 'riverside'], transit: [4], note: '4/3（週六）豫園步行到外灘，再搭車過江到陸家嘴；外白渡橋是外灘北端的加走選項。' },
   '5': { stops: [], transit: [], note: '最後一天留白，等回程航班確認再畫路線。' },
 };
